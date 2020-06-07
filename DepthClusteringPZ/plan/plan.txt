@@ -1,0 +1,29 @@
+Main ideas: Clustering + depth
+
+I. Connectivity-based clustering 
+eg. hierarchical clustering, spectral clustering(?)
+
+II Centroid-based clustering
+eg. k-means
+
+III distribution models (not discussed here)
+
+IV desity clustering 
+DBSCAN, OPTICS
+
+There are 2 broad approaches for clustering:
+1. Compactness: points that lie close to each other fall in the same cluster and are compact arount the cluster center, The closeness can be measured by the distance between the obeservation: K-means
+
+2. Connectivity: Points that are connected or immediately next to each other are put in the same cluster. Even if the distance between 2 points is less, if they are not connected, they are not clustered together. Spectral clustering is a technique that follows this approach.
+ 
+Paper:
+Intro: Clustering+Depth
+Then: Depth Based clustering(relative M depth + relative M-median depth)
+Results: comparsions
+Conclusions and future work: More data depth in depth based clustering
+
+Python/R
+
+
+
+
