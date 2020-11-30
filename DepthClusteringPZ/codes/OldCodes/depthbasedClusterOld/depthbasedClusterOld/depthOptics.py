@@ -44,7 +44,6 @@ def getCoreObjectSet(self, X):
         #Depth = self.depth(X)
 
     for i in range(N):
-            # 获取对象周围小于epsilon的点的个数
         depth = depth_mat[i,:]
         num = depth[depth > self.epsilon].shape[0] # eosilon is the minimum
         if num >= self.MinPts:
@@ -100,7 +99,7 @@ def fit(self, X):
     self.ReachDepth = [-0.1] * length
 
     while (len(D) != 0):
-        p = random.randint(0, len(D) - 1)  # 随机选取一个对象
+        p = random.randint(0, len(D) - 1) 
         p = D[p]
         self.Ordered.append(p)
         D.remove(p)
